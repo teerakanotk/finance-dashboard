@@ -1,12 +1,9 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
   return (
     <div>
-      <Button>
-        <Link href={"/dashboard"}>Click me</Link>
-      </Button>
+      <ModeToggle />
     </div>
   );
 }

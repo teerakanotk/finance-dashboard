@@ -15,7 +15,7 @@ import { Label } from "@/components/ui/label";
 
 export function SigninForm() {
   return (
-    <Card className="mx-auto w-[350px]">
+    <Card className="mx-auto w-[360px]">
       <CardHeader>
         <CardTitle className="text-2xl">Sign in</CardTitle>
         <CardDescription>
@@ -36,17 +36,14 @@ export function SigninForm() {
           <div className="grid gap-2">
             <div className="flex items-center">
               <Label htmlFor="password">Password</Label>
-              <Link href="#" className="ml-auto inline-block text-sm underline">
-                Forgot your password?
-              </Link>
             </div>
             <Input id="password" type="password" required />
           </div>
+          <Link href="#" className="ml-auto inline-block text-sm underline">
+            Forgot your password?
+          </Link>
           <Button type="submit" className="w-full">
             Continue
-          </Button>
-          <Button variant="outline" className="w-full">
-            Continue with Google
           </Button>
         </div>
         <div className="mt-4 text-center text-sm">
